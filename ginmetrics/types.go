@@ -80,7 +80,6 @@ func (m *Monitor) SetDuration(duration []float64) {
 
 func (m *Monitor) SetMetricPrefix(prefix string) {
 	metricRequestTotal = prefix + metricRequestTotal
-	metricRequestUVTotal = prefix + metricRequestUVTotal
 	metricURIRequestTotal = prefix + metricURIRequestTotal
 	metricRequestBody = prefix + metricRequestBody
 	metricResponseBody = prefix + metricResponseBody
@@ -90,7 +89,6 @@ func (m *Monitor) SetMetricPrefix(prefix string) {
 
 func (m *Monitor) SetMetricSuffix(suffix string) {
 	metricRequestTotal += suffix
-	metricRequestUVTotal += suffix
 	metricURIRequestTotal += suffix
 	metricRequestBody += suffix
 	metricResponseBody += suffix
